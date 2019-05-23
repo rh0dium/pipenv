@@ -1519,6 +1519,7 @@ def pip_install(
     pip_command = cmd.cmdify()
     c = None
     # with project.environment.activated():
+    print("HERE!! %s" % pip_command)
     c = delegator.run(pip_command, block=block, env=pip_config)
     return c
 
